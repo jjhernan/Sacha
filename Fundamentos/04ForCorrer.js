@@ -22,3 +22,6 @@ for (let i = 0; i< dias.length; i++)
 	totalKMS +=kms
 	console.log(`El dia ${dias[i]} ${nombre} corrio ${kms} kms`)
 }
+const promedioKMS =  totalKMS / dias.length
+
+console.log(`En promedio ${nombre} corrio ${promedioKMS.toFixed(2)} KMS en ${dias.length}`)
