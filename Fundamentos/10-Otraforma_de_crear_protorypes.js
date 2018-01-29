@@ -18,12 +18,29 @@ Punto.prototype.distancia = function distancia (p){
 	return Math.sqrt(x * x + y * y)
 }*/
 
-const p1 = new Punto(0,4)
+const Punto = {
+	init: function (x,y){
+		this.x = x
+		this.y = y
+	},
+	moverenX: function moverenX(x){
+		this.x += x
+	},
+	moverneY: function moverneY(y){
+		this.y += y
+	},
+	distancia: function distancia(p){
+		const x = this.x - p.x
+		const y = this.y - p.y
+		return Math.sqrt(x * x + y * y)
+	}
+}
+
+/*const p1 = new Punto(0,4)
 const p2 = new Punto(3,0)
+*/
 
-
-console.log(p1.distancia(p2).toFixed(2))
-p1.moverenX(10)
-console.log(p1.distancia(p2).toFixed(2))
-p2.moverenY(-4)
-console.log(p1.distancia(p2).toFixed(2))
+const p1 =  Object.create(Punto)
+p1.init(0,4)
+const p2 =  Object.create(Punto)
+p2.init(7,8)
