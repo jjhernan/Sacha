@@ -2,8 +2,12 @@ const p1 =
 {
 	x:0,
 	y:4,
-	moverEnX: function (x) {this.x = this.x + x},
-	moverEnY: function (y) {this.y = this.y + y}
+	moverEnX (x) {
+		this.x += x
+	},
+	moverEnY (y) {
+		this.y += y
+	}
 }
 
 const p2 = {
