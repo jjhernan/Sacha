@@ -25,7 +25,7 @@ const p2 = new Punto(3,0)
 
 
 console.log(p1.distancia(p2).toFixed(2))
-p1.moverenX(10)
+p1.moverEnX(10)
 console.log(p1.distancia(p2).toFixed(2))
-p2.moverenY(-4)
+p2.moverEnY(-4)
 console.log(p1.distancia(p2).toFixed(2))
