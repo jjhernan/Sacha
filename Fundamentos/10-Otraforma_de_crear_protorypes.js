@@ -43,4 +43,7 @@ const p2 = new Punto(3,0)
 const p1 =  Object.create(Punto)
 p1.init(0,4)
 const p2 =  Object.create(Punto)
-p2.init(7,8)
+p2.init(3,0)
+
+console.log(p1.distancia(p2).toFixed(2))
+console.log(p2.distancia(p1).toFixed(2))
